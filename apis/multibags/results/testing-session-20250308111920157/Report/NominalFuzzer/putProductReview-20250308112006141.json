@@ -1,0 +1,29 @@
+{
+  "generator": "NominalFuzzer",
+  "name": "putProductReview-20250308112006141",
+  "testInteractions": [
+    {
+      "requestMethod": "PUT",
+      "requestURL": "http://multibags.1dt.com.br/api/v1/auth/products/productId/reviews/4900187407896382464",
+      "requestHeaders": "Accept: application/json\nAuthorization: ██\n",
+      "requestBody": "{\"customerId\": 500, \"rating\": 4, \"language\": \"en\"}",
+      "requestSentAt": "Mar 8, 2025, 11:20:06 AM",
+      "responseProtocol": "http/1.1",
+      "responseStatusCode": {
+        "code": 500
+      },
+      "responseHeaders": "Date: Sat, 08 Mar 2025 14:20:05 GMT\nServer: Apache/2.4.29 (Ubuntu)\nAccess-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE\nAccess-Control-Allow-Origin: *\nAccess-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization\nAccess-Control-Allow-Credentials: true\nCache-Control: no-cache, no-store, max-age\u003d0, must-revalidate\nPragma: no-cache\nExpires: 0\nX-XSS-Protection: 1; mode\u003dblock\nX-Frame-Options: DENY\nX-Content-Type-Options: nosniff\nContent-Type: application/json;charset\u003dUTF-8\nConnection: close\nTransfer-Encoding: chunked\n",
+      "responseBody": "{\"errorCode\":null,\"message\":\"Failed to convert value of type \u0027java.lang.String\u0027 to required type \u0027java.lang.Long\u0027; nested exception is java.lang.NumberFormatException: For input string: \\\"productId\\\"\"}",
+      "responseReceivedAt": "Mar 8, 2025, 11:20:06 AM",
+      "tags": []
+    }
+  ],
+  "generatedAt": "Mar 8, 2025, 11:20:06 AM",
+  "testResults": {
+    "StatusCodeOracle": {
+      "result": "FAIL",
+      "message": "A server error occurred during the execution of the sequence."
+    }
+  },
+  "tags": []
+}

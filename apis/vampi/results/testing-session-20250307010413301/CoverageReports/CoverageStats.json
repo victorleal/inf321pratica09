@@ -1,0 +1,42 @@
+{
+  "ParameterValueCoverage": {
+    "raw": {
+      "documented": 0,
+      "documentedTested": 0,
+      "notDocumentedTested": 0
+    },
+    "rate": "0.0"
+  },
+  "StatusCodeCoverage": {
+    "raw": {
+      "documented": 18,
+      "documentedTested": 10,
+      "notDocumentedTested": 8
+    },
+    "rate": "55.55555555555556"
+  },
+  "OperationCoverage": {
+    "raw": {
+      "documented": 12,
+      "documentedTested": 12,
+      "notDocumentedTested": 0
+    },
+    "rate": "100.0"
+  },
+  "PathCoverage": {
+    "raw": {
+      "documented": 10,
+      "documentedTested": 10,
+      "notDocumentedTested": 0
+    },
+    "rate": "100.0"
+  },
+  "ParameterCoverage": {
+    "raw": {
+      "documented": 14,
+      "documentedTested": 14,
+      "notDocumentedTested": 0
+    },
+    "rate": "100.0"
+  }
+}

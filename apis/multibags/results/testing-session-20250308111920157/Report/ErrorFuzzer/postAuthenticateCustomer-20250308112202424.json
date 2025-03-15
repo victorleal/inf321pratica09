@@ -1,0 +1,31 @@
+{
+  "generator": "ErrorFuzzer",
+  "name": "postAuthenticateCustomer-20250308112202424",
+  "testInteractions": [
+    {
+      "requestMethod": "POST",
+      "requestURL": "http://multibags.1dt.com.br/api/v1/customer/login?tablet\u003d5404258302257562624\u0026mobile\u003dtrue",
+      "requestHeaders": "Accept: application/json\nAuthorization: ██\n",
+      "requestBody": "{\"password\": \"aA#123456789\", \"username\": \"otoniel.isidoro@gmail.com\"}",
+      "requestSentAt": "Mar 8, 2025, 11:22:02 AM",
+      "responseProtocol": "http/1.1",
+      "responseStatusCode": {
+        "code": 200
+      },
+      "responseHeaders": "Date: Sat, 08 Mar 2025 14:22:02 GMT\nServer: Apache/2.4.29 (Ubuntu)\nAccess-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE\nAccess-Control-Allow-Origin: *\nAccess-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization\nAccess-Control-Allow-Credentials: true\nContent-Type: application/json;charset\u003dUTF-8\nKeep-Alive: timeout\u003d5, max\u003d99\nConnection: Keep-Alive\nTransfer-Encoding: chunked\n",
+      "responseBody": "{\"id\":500,\"token\":\"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvdG9uaWVsLmlzaWRvcm9AZ21haWwuY29tIiwiYXVkIjoidW5rbm93biIsImV4cCI6MTc0MjA0ODUyMiwiaWF0IjoxNzQxNDQzNzIyfQ.FU0iJ04PjU-ab14dH8h6WhXmjfutOmhn0gP54XzOFIF4bjrQZ9CrvFp4UTRXf9ku8sMIHy99QB-1HFgWO2IFbw\"}",
+      "responseReceivedAt": "Mar 8, 2025, 11:22:02 AM",
+      "tags": [
+        "mutated"
+      ]
+    }
+  ],
+  "generatedAt": "Mar 8, 2025, 11:22:02 AM",
+  "testResults": {
+    "ErrorStatusCodeOracle": {
+      "result": "FAIL",
+      "message": "The erroneous test sequence was accepted as valid by the server."
+    }
+  },
+  "tags": []
+}

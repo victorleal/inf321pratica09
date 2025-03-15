@@ -1,0 +1,28 @@
+{
+  "producerParameters": [
+    "BookTitl",
+    "Secret",
+    "Owner",
+    "Help",
+    "User",
+    "Messag"
+  ],
+  "operations": [
+    "GET /",
+    "GET /books/v1",
+    "POST /books/v1",
+    "GET /books/v1/{book_title}"
+  ],
+  "readOnlyParameters": [
+    "Owner",
+    "Help",
+    "User",
+    "Messag"
+  ],
+  "consumerParameters": [
+    "BookTitl",
+    "Secret",
+    ""
+  ],
+  "resourceType": "Cluster0"
+}

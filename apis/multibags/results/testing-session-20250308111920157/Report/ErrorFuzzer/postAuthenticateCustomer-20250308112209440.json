@@ -1,0 +1,31 @@
+{
+  "generator": "ErrorFuzzer",
+  "name": "postAuthenticateCustomer-20250308112209440",
+  "testInteractions": [
+    {
+      "requestMethod": "POST",
+      "requestURL": "http://multibags.1dt.com.br/api/v1/customer/login",
+      "requestHeaders": "Accept: application/json\nAuthorization: ██\n",
+      "requestBody": "{\"password\": \"aA#123456789\", \"username\": true}",
+      "requestSentAt": "Mar 8, 2025, 11:22:09 AM",
+      "responseProtocol": "http/1.1",
+      "responseStatusCode": {
+        "code": 404
+      },
+      "responseHeaders": "Date: Sat, 08 Mar 2025 14:22:09 GMT\nServer: Apache/2.4.29 (Ubuntu)\nAccess-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE\nAccess-Control-Allow-Origin: *\nAccess-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization\nAccess-Control-Allow-Credentials: true\nKeep-Alive: timeout\u003d5, max\u003d96\nConnection: Keep-Alive\nTransfer-Encoding: chunked\n",
+      "responseBody": "",
+      "responseReceivedAt": "Mar 8, 2025, 11:22:09 AM",
+      "tags": [
+        "mutated"
+      ]
+    }
+  ],
+  "generatedAt": "Mar 8, 2025, 11:22:09 AM",
+  "testResults": {
+    "ErrorStatusCodeOracle": {
+      "result": "PASS",
+      "message": "The erroneous test sequence was rejected by the server."
+    }
+  },
+  "tags": []
+}

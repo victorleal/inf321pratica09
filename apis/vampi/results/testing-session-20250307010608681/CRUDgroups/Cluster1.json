@@ -1,0 +1,28 @@
+{
+  "producerParameters": [
+    "Email",
+    "Usernam",
+    "Admin",
+    "Password"
+  ],
+  "operations": [
+    "GET /users/v1",
+    "DELETE /users/v1/{username}",
+    "GET /users/v1/{username}",
+    "PUT /users/v1/{username}/password",
+    "GET /users/v1/_debug",
+    "PUT /users/v1/{username}/email",
+    "POST /users/v1/register",
+    "POST /users/v1/login"
+  ],
+  "readOnlyParameters": [
+    "Admin"
+  ],
+  "consumerParameters": [
+    "",
+    "Email",
+    "Usernam",
+    "Password"
+  ],
+  "resourceType": "Cluster1"
+}

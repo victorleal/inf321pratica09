@@ -1,0 +1,13 @@
+operation,realCrudSemantics,inferredCrudSemantics,realResourceType,inferredResourceType,realInputResourceIdentifier,inferredInputResourceIdentifier,realOutputResourceIdentifier,inferredOutputResourceIdentifier
+GET /,UNKNOWN,READ,,Cluster0,,,,
+GET /users/v1,READ_MULTI,READ_MULTI,user,Cluster1,,,Usernam,Usernam
+GET /books/v1,READ_MULTI,READ_MULTI,book,Cluster0,,,BookTitl,
+DELETE /users/v1/{username},DELETE,DELETE,user,Cluster1,Usernam,Usernam,,
+GET /users/v1/{username},READ,READ,user,Cluster1,Usernam,Usernam,,Usernam
+PUT /users/v1/{username}/password,UPDATE,UPDATE,user,Cluster1,Usernam,Usernam,,
+POST /books/v1,CREATE,CREATE,book,Cluster0,BookTitl,,,
+GET /users/v1/_debug,READ_MULTI,READ_MULTI,user,Cluster1,,,Usernam,Usernam
+PUT /users/v1/{username}/email,UPDATE,UPDATE,user,Cluster1,Usernam,Usernam,,
+POST /users/v1/register,CREATE,CREATE,user,Cluster1,Usernam,Usernam,,
+POST /users/v1/login,UNKNOWN,CREATE,,Cluster1,,Usernam,,
+GET /books/v1/{book_title},READ,READ,book,Cluster0,BookTitl,,BookTitl,

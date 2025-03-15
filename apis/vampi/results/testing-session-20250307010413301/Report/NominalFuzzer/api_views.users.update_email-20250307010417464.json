@@ -1,0 +1,29 @@
+{
+  "generator": "NominalFuzzer",
+  "name": "api_views.users.update_email-20250307010417464",
+  "testInteractions": [
+    {
+      "requestMethod": "PUT",
+      "requestURL": "http://localhost:5001/users/v1/Circum-neptunian/email",
+      "requestHeaders": "Accept: application/json\nContent-Type: application/json\n",
+      "requestBody": "{\"email\": \"dzztj@gmail.com\"}",
+      "requestSentAt": "Mar 7, 2025, 1:04:17 AM",
+      "responseProtocol": "http/1.1",
+      "responseStatusCode": {
+        "code": 401
+      },
+      "responseHeaders": "Server: Werkzeug/2.2.3 Python/3.11.10\nDate: Fri, 07 Mar 2025 04:04:17 GMT\nContent-Type: application/problem+json\nContent-Length: 119\nConnection: close\n",
+      "responseBody": "{\n  \"detail\": \"No authorization token provided\",\n  \"status\": 401,\n  \"title\": \"Unauthorized\",\n  \"type\": \"about:blank\"\n}\n",
+      "responseReceivedAt": "Mar 7, 2025, 1:04:17 AM",
+      "tags": []
+    }
+  ],
+  "generatedAt": "Mar 7, 2025, 1:04:17 AM",
+  "testResults": {
+    "StatusCodeOracle": {
+      "result": "UNKNOWN",
+      "message": "The obtained status code is not informative enough to determine the outcome of the test sequence."
+    }
+  },
+  "tags": []
+}

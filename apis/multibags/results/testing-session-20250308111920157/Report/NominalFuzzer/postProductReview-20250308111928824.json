@@ -1,0 +1,29 @@
+{
+  "generator": "NominalFuzzer",
+  "name": "postProductReview-20250308111928824",
+  "testInteractions": [
+    {
+      "requestMethod": "POST",
+      "requestURL": "http://multibags.1dt.com.br/api/v1/auth/products/6/reviews",
+      "requestHeaders": "Accept: application/json\nAuthorization: ██\n",
+      "requestBody": "{\"customerId\": 500, \"rating\": 4, \"description\": \"upa4Y\\\\87çl8n75lqzS9iFgIO£T\"}",
+      "requestSentAt": "Mar 8, 2025, 11:19:31 AM",
+      "responseProtocol": "http/1.1",
+      "responseStatusCode": {
+        "code": 400
+      },
+      "responseHeaders": "Date: Sat, 08 Mar 2025 14:19:30 GMT\nServer: Apache/2.4.29 (Ubuntu)\nAccess-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE\nAccess-Control-Allow-Origin: *\nAccess-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization\nAccess-Control-Allow-Credentials: true\nCache-Control: no-cache, no-store, max-age\u003d0, must-revalidate\nPragma: no-cache\nExpires: 0\nX-XSS-Protection: 1; mode\u003dblock\nX-Frame-Options: DENY\nX-Content-Type-Options: nosniff\nContent-Type: application/json;charset\u003dUTF-8\nConnection: close\nTransfer-Encoding: chunked\n",
+      "responseBody": "{\"timestamp\":1741443571305,\"status\":400,\"error\":\"Bad Request\",\"message\":\"You have evaluated this product\",\"path\":\"/api/v1/auth/products/6/reviews\"}",
+      "responseReceivedAt": "Mar 8, 2025, 11:19:31 AM",
+      "tags": []
+    }
+  ],
+  "generatedAt": "Mar 8, 2025, 11:19:28 AM",
+  "testResults": {
+    "StatusCodeOracle": {
+      "result": "UNKNOWN",
+      "message": "The obtained status code is not informative enough to determine the outcome of the test sequence."
+    }
+  },
+  "tags": []
+}

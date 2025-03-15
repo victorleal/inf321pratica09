@@ -1,0 +1,31 @@
+{
+  "generator": "ErrorFuzzer",
+  "name": "api_views.users.login_user-20250307010425826",
+  "testInteractions": [
+    {
+      "requestMethod": "POST",
+      "requestURL": "http://localhost:5001/users/v1/login",
+      "requestHeaders": "Accept: application/json\nContent-Type: application/json\n",
+      "requestBody": "{\"password\": \"viHJ\", \"username\": false}",
+      "requestSentAt": "Mar 7, 2025, 1:04:25 AM",
+      "responseProtocol": "http/1.1",
+      "responseStatusCode": {
+        "code": 400
+      },
+      "responseHeaders": "Server: Werkzeug/2.2.3 Python/3.11.10\nDate: Fri, 07 Mar 2025 04:04:25 GMT\nContent-Type: application/json\nContent-Length: 82\nConnection: close\n",
+      "responseBody": "{\n  \"message\": \"False is not of type \u0027string\u0027 - \u0027username\u0027\",\n  \"status\": \"fail\"\n}\n",
+      "responseReceivedAt": "Mar 7, 2025, 1:04:25 AM",
+      "tags": [
+        "mutated"
+      ]
+    }
+  ],
+  "generatedAt": "Mar 7, 2025, 1:04:25 AM",
+  "testResults": {
+    "ErrorStatusCodeOracle": {
+      "result": "PASS",
+      "message": "The erroneous test sequence was rejected by the server."
+    }
+  },
+  "tags": []
+}

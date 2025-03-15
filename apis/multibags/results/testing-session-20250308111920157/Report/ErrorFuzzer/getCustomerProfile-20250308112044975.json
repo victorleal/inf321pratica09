@@ -1,0 +1,30 @@
+{
+  "generator": "ErrorFuzzer",
+  "name": "getCustomerProfile-20250308112044975",
+  "testInteractions": [
+    {
+      "requestMethod": "GET",
+      "requestURL": "http://multibags.1dt.com.br/api/v1/auth/customers/profile",
+      "requestHeaders": "Accept: application/json\nContent-Type: 500\nAuthorization: ██\n",
+      "requestSentAt": "Mar 8, 2025, 11:20:45 AM",
+      "responseProtocol": "http/1.1",
+      "responseStatusCode": {
+        "code": 500
+      },
+      "responseHeaders": "Date: Sat, 08 Mar 2025 14:20:44 GMT\nServer: Apache/2.4.29 (Ubuntu)\nAccess-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE\nAccess-Control-Allow-Origin: *\nAccess-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization\nAccess-Control-Allow-Credentials: true\nCache-Control: no-cache, no-store, max-age\u003d0, must-revalidate\nPragma: no-cache\nExpires: 0\nX-XSS-Protection: 1; mode\u003dblock\nX-Frame-Options: DENY\nX-Content-Type-Options: nosniff\nContent-Type: application/json;charset\u003dUTF-8\nConnection: close\nTransfer-Encoding: chunked\n",
+      "responseBody": "{\"errorCode\":null,\"message\":\"Invalid mime type \\\"500\\\": does not contain \u0027/\u0027\"}",
+      "responseReceivedAt": "Mar 8, 2025, 11:20:45 AM",
+      "tags": [
+        "mutated"
+      ]
+    }
+  ],
+  "generatedAt": "Mar 8, 2025, 11:20:44 AM",
+  "testResults": {
+    "ErrorStatusCodeOracle": {
+      "result": "FAIL",
+      "message": "A server error occurred during the execution of the sequence."
+    }
+  },
+  "tags": []
+}

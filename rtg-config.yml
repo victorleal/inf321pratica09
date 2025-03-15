@@ -1,0 +1,2 @@
+apiUnderTest: multibags
+strategyClassName: NominalAndErrorStrategy

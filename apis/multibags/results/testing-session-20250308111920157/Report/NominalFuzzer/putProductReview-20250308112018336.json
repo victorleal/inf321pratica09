@@ -1,0 +1,29 @@
+{
+  "generator": "NominalFuzzer",
+  "name": "putProductReview-20250308112018336",
+  "testInteractions": [
+    {
+      "requestMethod": "PUT",
+      "requestURL": "http://multibags.1dt.com.br/api/v1/auth/products/6/reviews/28",
+      "requestHeaders": "Accept: application/json\nAuthorization: ██\n",
+      "requestBody": "{\"customerId\": 500, \"rating\": 4, \"description\": \"This is a good product\", \"language\": \"pyramider\"}",
+      "requestSentAt": "Mar 8, 2025, 11:20:19 AM",
+      "responseProtocol": "http/1.1",
+      "responseStatusCode": {
+        "code": 404
+      },
+      "responseHeaders": "Date: Sat, 08 Mar 2025 14:20:19 GMT\nServer: Apache/2.4.29 (Ubuntu)\nAccess-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE\nAccess-Control-Allow-Origin: *\nAccess-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization\nAccess-Control-Allow-Credentials: true\nCache-Control: no-cache, no-store, max-age\u003d0, must-revalidate\nPragma: no-cache\nExpires: 0\nX-XSS-Protection: 1; mode\u003dblock\nX-Frame-Options: DENY\nX-Content-Type-Options: nosniff\nContent-Type: application/json;charset\u003dUTF-8\nKeep-Alive: timeout\u003d5, max\u003d99\nConnection: Keep-Alive\nTransfer-Encoding: chunked\n",
+      "responseBody": "{\"timestamp\":1741443619803,\"status\":404,\"error\":\"Not Found\",\"message\":\"Product review with id 28 does not exist\",\"path\":\"/api/v1/auth/products/6/reviews/28\"}",
+      "responseReceivedAt": "Mar 8, 2025, 11:20:19 AM",
+      "tags": []
+    }
+  ],
+  "generatedAt": "Mar 8, 2025, 11:20:18 AM",
+  "testResults": {
+    "StatusCodeOracle": {
+      "result": "UNKNOWN",
+      "message": "The obtained status code is not informative enough to determine the outcome of the test sequence."
+    }
+  },
+  "tags": []
+}

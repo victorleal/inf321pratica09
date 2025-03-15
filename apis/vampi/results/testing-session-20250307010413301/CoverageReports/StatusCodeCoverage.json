@@ -1,0 +1,126 @@
+{
+  "documented": {
+    "GET /": [
+      "200"
+    ],
+    "GET /users/v1": [
+      "200"
+    ],
+    "GET /books/v1": [
+      "200"
+    ],
+    "DELETE /users/v1/{username}": [
+      "401",
+      "200"
+    ],
+    "GET /users/v1/{username}": [
+      "404",
+      "200"
+    ],
+    "PUT /users/v1/{username}/password": [
+      "401"
+    ],
+    "POST /books/v1": [
+      "401",
+      "200"
+    ],
+    "GET /users/v1/_debug": [
+      "200"
+    ],
+    "PUT /users/v1/{username}/email": [
+      "401"
+    ],
+    "POST /users/v1/register": [
+      "200"
+    ],
+    "POST /users/v1/login": [
+      "200",
+      "400"
+    ],
+    "GET /books/v1/{book_title}": [
+      "401",
+      "404",
+      "200"
+    ]
+  },
+  "documentedTested": {
+    "GET /": [
+      "200"
+    ],
+    "DELETE /users/v1/{username}": [
+      "401"
+    ],
+    "GET /users/v1/{username}": [
+      "404"
+    ],
+    "PUT /users/v1/{username}/password": [
+      "401"
+    ],
+    "POST /books/v1": [
+      "401"
+    ],
+    "PUT /users/v1/{username}/email": [
+      "401"
+    ],
+    "GET /books/v1/{book_title}": [
+      "401",
+      "404"
+    ],
+    "POST /users/v1/login": [
+      "200",
+      "400"
+    ]
+  },
+  "notDocumentedTested": {
+    "GET /books/v1": [
+      "500"
+    ],
+    "GET /users/v1": [
+      "500"
+    ],
+    "DELETE /users/v1/{username}": [
+      "404"
+    ],
+    "GET /users/v1/{username}": [
+      "500"
+    ],
+    "PUT /users/v1/{username}/password": [
+      "405"
+    ],
+    "GET /users/v1/_debug": [
+      "500"
+    ],
+    "PUT /users/v1/{username}/email": [
+      "405"
+    ],
+    "POST /users/v1/register": [
+      "500"
+    ]
+  },
+  "notTested": {
+    "GET /users/v1": [
+      "200"
+    ],
+    "GET /books/v1": [
+      "200"
+    ],
+    "DELETE /users/v1/{username}": [
+      "200"
+    ],
+    "GET /users/v1/{username}": [
+      "200"
+    ],
+    "POST /books/v1": [
+      "200"
+    ],
+    "GET /users/v1/_debug": [
+      "200"
+    ],
+    "POST /users/v1/register": [
+      "200"
+    ],
+    "GET /books/v1/{book_title}": [
+      "200"
+    ]
+  }
+}

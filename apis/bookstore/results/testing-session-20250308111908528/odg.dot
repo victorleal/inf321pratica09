@@ -1,0 +1,35 @@
+digraph G {
+  1 [ label="POST /book" ];
+  2 [ label="GET /book/{bookId}" ];
+  3 [ label="DELETE /book" ];
+  4 [ label="PUT /book" ];
+  5 [ label="GET /books" ];
+  1 -> 5 [ label="Author" ];
+  1 -> 5 [ label="Titl" ];
+  1 -> 5 [ label="Price" ];
+  2 -> 5 [ label="BookId" ];
+  4 -> 5 [ label="BookId" ];
+  4 -> 5 [ label="Author" ];
+  4 -> 5 [ label="Titl" ];
+  4 -> 5 [ label="Price" ];
+  3 -> 5 [ label="BookId" ];
+  2 -> 1 [ label="BookId" ];
+  4 -> 1 [ label="BookId" ];
+  4 -> 1 [ label="Author" ];
+  4 -> 1 [ label="Titl" ];
+  4 -> 1 [ label="Price" ];
+  3 -> 1 [ label="BookId" ];
+  1 -> 2 [ label="Price" ];
+  1 -> 2 [ label="Author" ];
+  1 -> 2 [ label="Titl" ];
+  4 -> 2 [ label="Price" ];
+  4 -> 2 [ label="BookId" ];
+  4 -> 2 [ label="Author" ];
+  4 -> 2 [ label="Titl" ];
+  3 -> 2 [ label="BookId" ];
+  1 -> 4 [ label="Price" ];
+  1 -> 4 [ label="Author" ];
+  1 -> 4 [ label="Titl" ];
+  2 -> 4 [ label="BookId" ];
+  3 -> 4 [ label="BookId" ];
+}
