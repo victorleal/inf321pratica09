@@ -10,6 +10,7 @@ import static org.hamcrest.Matchers.*;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 //import io.restassured.common.mapper.TypeRef;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
@@ -23,7 +24,19 @@ import org.junit.jupiter.api.*;
 @Order(41)
 public class postProductReview_20250308111928818 {
 
-String baseURL ="http://multibags.1dt.com.br/";
+    String baseURL ="http://multibags.1dt.com.br/";
+
+    private void deleteReview(String token, Integer productId, Integer reviewId){
+        RequestSpecification request1 = RestAssured.given().header("Authorization","Bearer " + token);
+        request1.contentType(ContentType.JSON);
+        request1.pathParam("productId" , productId);
+        request1.pathParam("reviewId" , reviewId);
+        Response response1 = request1.when().delete(baseURL + "api/v1/auth/products/{productId}/reviews/{reviewId}");
+
+        if (response1.getStatusCode() == 200){
+            System.out.println("Review deleted successfully.");
+        }
+    }
 
     private void test0() throws JSONException{
         // AUTENTICACAO DO USUARIO PARA OBTER O TOKEN
@@ -52,7 +65,7 @@ String baseURL ="http://multibags.1dt.com.br/";
         //OPERATION 0
         //Parameter initialization
         JSONObject request0_request_body = new JSONObject();
-        Object request0_request_body_productId = 3;
+        Object request0_request_body_productId = 10;
         Object request0_request_body_date = "2025-03-08";
         Object request0_request_body_rating = 4;
         Object request0_request_body_description = "This is a good product";
@@ -74,6 +87,13 @@ String baseURL ="http://multibags.1dt.com.br/";
 
         Assertions.assertFalse(response0.getStatusCode() >= 400,"StatusCode 4xx: There's an error on the request.");
         Assertions.assertFalse(response0.getStatusCode() >= 500,"StatusCode 5xx: The test sequence was not executed successfully.");
+
+        // Delete review to avoid problems when calling the test again
+        // The API does not allow a customer to send a review for the same product more than once
+        // So we delete the review after the test, and we can run it again to the same product and customer
+        jsonPathEvaluator = response0.jsonPath();
+        Integer reviewId = jsonPathEvaluator.get("id");
+        deleteReview(token, (Integer) request0_request_body_productId, reviewId);
     }
 
     @Test
